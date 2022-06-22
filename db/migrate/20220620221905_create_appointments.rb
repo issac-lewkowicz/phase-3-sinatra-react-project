@@ -6,7 +6,7 @@ class CreateAppointments < ActiveRecord::Migration[6.1]
       t.belongs_to :doctor
       t.belongs_to :patient
       
-      t.timestamps
+      #t.timestamps
     end
   end
 end

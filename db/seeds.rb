@@ -10,7 +10,7 @@ puts "Seeding doctors..."
 specialties = %w(Allergy-and-immunology Anesthesiology Dermatology Diagnostic-radiology Emergency-medicine Family-medicine Internal-medicine Medical-genetics Neurology Nuclear-medicine Obstetrics-and-gynecology Ophthalmology Pathology Pediatrics Physical-medicine-and-rehabilitation Preventive-medicine Psychiatry Radiation-oncology Surgery Urology)
 
 10.times do
-  Doctor.create(name: Faker::Name.name,  specialty: specialties.sample, email: Faker::Internet.email, phone: Faker::PhoneNumber.cell_phone, location: Faker::Address.full_address)
+  Doctor.create(name: Faker::Name.name,  specialty: specialties.sample, email: Faker::Internet.email, phone: Faker::PhoneNumber.cell_phone)
 end
 
 puts "Seeding patients..."
