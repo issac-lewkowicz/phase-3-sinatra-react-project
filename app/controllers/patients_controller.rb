@@ -1,5 +1,5 @@
 class PatientsController < ApplicationController
-  get "/doctors/patients/:id" do 
+  get "/patients/:id" do 
 
     patient = Patient.find(params[:id]).to_json
 
